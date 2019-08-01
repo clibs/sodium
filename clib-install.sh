@@ -7,7 +7,7 @@ fi
 ## make !
 {
   sh autogen.sh
-  ./configure
+  ./configure --prefix=$PREFIX
   make
   make check
   make install
