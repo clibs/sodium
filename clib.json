@@ -6,5 +6,5 @@
   "keywords": [ "libsodium", "sodium", "cryptography" ],
   "install": "sh clib-install.sh",
   "makefile": "clib-install.sh",
-  "configure": "if test -f configure || $(test -f autogen.sh && sh autogen.sh); then sh configure --prefix=$PREFIX; fi"
+  "configure": "if test -f configure || $(test -f autogen.sh && sh autogen.sh); then test -f configure && sh configure --prefix=$PREFIX; fi"
 }
