@@ -1,0 +1,7 @@
+{
+  "name": "sodium",
+  "repo": "jedisct1/libsodium",
+  "version": "master",
+  "description": "A modern, portable, easy to use crypto library.",
+  "install": "sh autogen.sh && ./configure --prefix ${PREFIX:-/usr/local} && make install"
+}
